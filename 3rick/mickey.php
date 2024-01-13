@@ -10,9 +10,9 @@
         .cuerpo {
             width: 150px;
             height: 150px;
-            background-color: teal;
+            background-color: #ffff90;
             position: relative;
-            float: left;
+            float: right;
             margin: 20px;
         }
 

@@ -12,6 +12,8 @@
             height: 150px;
             background-color: teal;
             position: relative;
+            float: left;
+            margin: 20px;
         }
 
         .izquierda {
@@ -44,6 +46,16 @@
 </head>
 
 <body>
+    <div class="cuerpo">
+        <div class="izquierda"> </div>
+        <div class="derecha"> </div>
+        <div class="cara"> </div>
+    </div>
+    <div class="cuerpo">
+        <div class="izquierda"> </div>
+        <div class="derecha"> </div>
+        <div class="cara"> </div>
+    </div>
     <div class="cuerpo">
         <div class="izquierda"> </div>
         <div class="derecha"> </div>

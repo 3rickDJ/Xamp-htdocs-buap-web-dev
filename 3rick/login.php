@@ -25,7 +25,18 @@
             <div class="col-12 col-sm-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5>Login</h5>
+                        <h5 class="card-title text-center">Login</h5>
+                        <div class="mb-3 mt-5">
+                            <label for="usuario" class="form-label">Usuario:</label>
+                            <input type="text" id="usuario" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="pass" class="form-label">Password</label>
+                            <input type="text" id="pass" class="form-control">
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-primary" type="button">Enviar</button>
+                        </div>
                     </div>
                 </div>
             </div>

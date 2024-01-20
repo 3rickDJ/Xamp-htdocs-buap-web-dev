@@ -42,6 +42,60 @@
             </div>
             <div class="col-12 col-sm-4">3</div>
         </div>
+
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Edad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Carlos</td>
+                            <td>Sanchez</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>Carlos</td>
+                            <td>Sanchez</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>Carlos</td>
+                            <td>Sanchez</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>Carlos</td>
+                            <td>Sanchez</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>Carlos</td>
+                            <td>Sanchez</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>Carlos</td>
+                            <td>Sanchez</td>
+                            <td>25</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Total</th>
+                            <th>6</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="col-4"></div>
+        </div>
     </div>
 </body>
 

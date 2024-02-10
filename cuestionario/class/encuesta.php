@@ -44,12 +44,8 @@ class encuesta
 
     public function preguntas($id_encuesta, $id)
     {
-        $sql = "SELECT e.id eid, e.nom enom,p.id pid, p.nom pnom, p.sub psub, p.id_encuesta
-        pid_encuesta,
-        r.id rid, r.nom rnom, r.valor rvalor, r.id_encuesta rid_encuesta , r.id_pregunta rid_pregunta
-        FROM encuesta e inner join pregunta p on e.id = p.id_encuesta inner join respuesta r
-        on p.id= r.id_pregunta where r.id_encuesta= '" . $id_encuesta . "'and p.id= '" . $id .
-            "'";
+        $sql = "SELECT e.id eid, e.nom enom,p.id pid, p.nom pnom, p.sub psub, p.id_encuasta pid_encuesta, r.id rid, r.nom rnom, r.valor rvalor, r.id_encuesta rid_encuesta , r.id_pregunta rid_pregunta FROM encuesta e inner join pregunta p on e.id = p.id_encuasta inner join respuesta r on p.id= r.id_pregunta where r.id_encuesta= '" . $id_encuesta . "'and p.id= '" . $id . "'";
+
         $result = $this->conn->select($sql);
 
         $obj = new stdClass();
@@ -79,7 +75,7 @@ class encuesta
 
     public function totalDePreguntas($id_encuesta)
     {
-        $sql = "SELECT count(id_encuasta) total FROM encuesta e inner join pregunta p on e.id = p.id_encueasta where id_encuasta='" . $id_encuesta . "'";
+        $sql = "SELECT count(id_encuasta) total FROM encuesta e inner join pregunta p on e.id = p.id_encueasta where id_encuasta='1'";
         $result = $this->conn->select($sql);
         $total = 0;
         if ($result->num_rows > 0) {

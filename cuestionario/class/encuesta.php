@@ -52,6 +52,7 @@ class encuesta
         $obj->encuesta = "";
         $obj->pregunta = "";
         $obj->numero = 0;
+        $obj->total = $this->totalDePreguntas($id_encuesta);
         $obj->respuesta = [];
 
 
@@ -75,7 +76,7 @@ class encuesta
 
     public function totalDePreguntas($id_encuesta)
     {
-        $sql = "SELECT count(id_encuasta) total FROM encuesta e inner join pregunta p on e.id = p.id_encueasta where id_encuasta='1'";
+        $sql = "SELECT count(id_encuasta) total FROM encuesta e inner join pregunta p on e.id = p.id_encuasta where id_encuasta='" . $id_encuesta ."'";
         $result = $this->conn->select($sql);
         $total = 0;
         if ($result->num_rows > 0) {

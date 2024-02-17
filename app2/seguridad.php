@@ -9,4 +9,3 @@ if ($user == "admin"){
 } else {
     header("Location: login.php");
 }
-?>

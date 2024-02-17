@@ -13,4 +13,3 @@ if($user == 'root' && $pass == 'root'){
     echo "Usuario o contraseña incorrectos";
     header("Location: login.php");
 }
-?>
